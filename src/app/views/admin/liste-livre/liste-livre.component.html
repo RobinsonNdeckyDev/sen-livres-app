@@ -1,0 +1,101 @@
+<div class="mb-3">
+    <p class="text-start font-medium">
+        Liste des livres
+    </p>
+</div>
+
+<div class="container">
+    <!-- Barre de recherche -->
+    <div class="search-container">
+        <span class="p-input-icon-left">
+            <!-- <i class="pi pi-search"></i> -->
+            <input
+                pInputText
+                type="text"
+                [(ngModel)]="searchText"
+                placeholder="Rechercher un livre..."
+                class="search-input"
+            />
+        </span>
+    </div>
+
+    <!-- Grille de cards -->
+    <div class="cards-grid" *ngIf="filteredLivres && filteredLivres.length > 0">
+        <div class="card-wrapper" *ngFor="let livre of pagedLivres">
+            <p-card styleClass="livre-card">
+                <ng-template pTemplate="header">
+                    <div class="card-header">
+                        <img src="assets/images/book-removebg-preview.png" alt="Couverture du livre">
+                    </div>
+                </ng-template>
+
+                <div class="card-content">
+                    <h3>{{livre.titre}}</h3>
+                    <p class="auteur">{{livre.auteur?.prenom}} {{livre.auteur?.nom}}</p>
+                    <p class="isbn">ISBN: {{livre.isbn}}</p>
+                    <p class="langue">{{livre.langue}}</p>
+                </div>
+
+                <ng-template pTemplate="footer">
+                    <div class="card-actions">
+                        <button pButton icon="pi pi-eye"
+                            class="p-button-rounded p-button-info"
+                            (click)="openViewModal(livre)">
+                        </button>
+                        <button pButton icon="pi pi-trash"
+                            class="p-button-rounded p-button-danger"
+                            (click)="confirmDelete(livre)"
+                            >
+                            <!--  -->
+                        </button>
+                    </div>
+                </ng-template>
+            </p-card>
+        </div>
+    </div>
+
+    <div class="no-results" *ngIf="filteredLivres && filteredLivres.length === 0">
+        <p>Aucun livre trouvé.</p>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination-container">
+        <p-paginator
+            [rows]="rows"
+            [totalRecords]="filteredLivres.length"
+            [first]="first"
+            (onPageChange)="onPageChange($event)"
+            [rowsPerPageOptions]="[3, 6, 9, 12]">
+        </p-paginator>
+    </div>
+
+    <!-- Modal de détail -->
+    <p-dialog
+        [(visible)]="viewModalVisible"
+        [style]="{width: '450px'}"
+        header="Détails du livre"
+        [modal]="true"
+        styleClass="p-fluid">
+        <div class="livre-details" *ngIf="selectedLivre">
+            <div class="detail-row">
+                <label>Titre:</label>
+                <span>{{selectedLivre.titre}}</span>
+            </div>
+            <div class="detail-row">
+                <label>Auteur:</label>
+                <span>{{selectedLivre.auteur?.prenom}} {{selectedLivre.auteur?.nom}}</span>
+            </div>
+            <div class="detail-row">
+                <label>ISBN:</label>
+                <span>{{selectedLivre.isbn}}</span>
+            </div>
+            <div class="detail-row">
+                <label>Langue:</label>
+                <span>{{selectedLivre.langue}}</span>
+            </div>
+        </div>
+    </p-dialog>
+
+    <!-- Dialog de confirmation -->
+    <p-confirmDialog [style]="{width: '450px'}"></p-confirmDialog>
+</div>

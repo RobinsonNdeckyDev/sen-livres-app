@@ -1,0 +1,61 @@
+<nav class="bg-[#2C3E50] shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      <!-- Logo -->
+      <div class="flex-shrink-0 flex items-center">
+        <a routerLink="/accueil" class="text-[#FFFFFF] text-xl font-bold">Sen Livres</a>
+      </div>
+
+      <!-- Menu principal - Desktop -->
+      <div class="hidden md:flex items-center justify-center flex-1">
+        <div class="flex space-x-4">
+          <a routerLink="/accueil" routerLinkActive="active" class="text-[#FFFFFF] hover:bg-[#E67E22] px-3 py-2 rounded-md text-sm font-medium">Accueil</a>
+          <a routerLink="about" routerLinkActive="active" class="text-[#FFFFFF] hover:bg-[#E67E22] px-3 py-2 rounded-md text-sm font-medium">À propos</a>
+          <a routerLink="blog" routerLinkActive="active" class="text-[#FFFFFF] hover:bg-[#E67E22] px-3 py-2 rounded-md text-sm font-medium">Blog</a>
+          <a routerLink="livres" routerLinkActive="active" class="text-[#FFFFFF] hover:bg-[#E67E22] px-3 py-2 rounded-md text-sm font-medium">Livres</a>
+          <a routerLink="contact" routerLinkActive="active" class="text-[#FFFFFF] hover:bg-[#E67E22] px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+        </div>
+      </div>
+
+      <!-- Boutons Connexion/Inscription - Desktop -->
+      <div class="hidden md:flex items-center space-x-4">
+        <ng-container *ngIf="!isConnected; else loggedIn">
+          <a routerLink="/login" class="text-[#FFFFFF] hover:bg-[#E67E22] px-4 py-2 rounded-md text-sm font-medium">Connexion</a>
+          <a routerLink="/register" class="bg-[#E67E22] text-[#FFFFFF] hover:bg-[#d35400] px-4 py-2 rounded-md text-sm font-medium">Inscription</a>
+        </ng-container>
+        <ng-template #loggedIn>
+          <button (click)="logout()" class="bg-[#E67E22] text-[#FFFFFF] hover:bg-[#d35400] px-4 py-2 rounded-md text-sm font-medium">Se déconnecter</button>
+        </ng-template>
+      </div>
+
+      <!-- Bouton Menu Mobile -->
+      <div class="-mr-2 flex md:hidden">
+        <button (click)="toggleMobileMenu()" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-[#FFFFFF] hover:bg-[#E67E22]">
+          <span class="sr-only">Ouvrir le menu</span>
+          <i class="bi bi-list text-2xl" [class.hidden]="isMobileMenuOpen"></i>
+          <i class="bi bi-x-lg text-2xl" [class.hidden]="!isMobileMenuOpen"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu Mobile -->
+  <div class="md:hidden" [class.hidden]="!isMobileMenuOpen">
+    <div class="px-2 pt-2 pb-3 space-y-1">
+      <a href="/" class="text-[#FFFFFF] hover:bg-[#E67E22] block px-3 py-2 rounded-md text-base font-medium">Accueil</a>
+      <a href="/a-propos" class="text-[#FFFFFF] hover:bg-[#E67E22] block px-3 py-2 rounded-md text-base font-medium">À propos</a>
+      <a href="/blog" class="text-[#FFFFFF] hover:bg-[#E67E22] block px-3 py-2 rounded-md text-base font-medium">Blog</a>
+      <a href="/livres" class="text-[#FFFFFF] hover:bg-[#E67E22] block px-3 py-2 rounded-md text-base font-medium">Livres</a>
+      <a href="/contact" class="text-[#FFFFFF] hover:bg-[#E67E22] block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+    </div>
+    <div class="px-2 pt-2 pb-3 space-y-1 border-t border-[#ECF0F1]">
+      <ng-container *ngIf="!isConnected; else mobileLoggedIn">
+        <a href="/connexion" class="text-[#FFFFFF] hover:bg-[#E67E22] block px-3 py-2 rounded-md text-base font-medium">Connexion</a>
+        <a href="/inscription" class="bg-[#E67E22] text-[#FFFFFF] hover:bg-[#d35400] block px-3 py-2 rounded-md text-base font-medium">Inscription</a>
+      </ng-container>
+      <ng-template #mobileLoggedIn>
+        <button (click)="logout()" class="bg-[#E67E22] text-[#FFFFFF] hover:bg-[#d35400] w-full text-left px-3 py-2 rounded-md text-base font-medium">Se déconnecter</button>
+      </ng-template>
+    </div>
+  </div>
+</nav>
