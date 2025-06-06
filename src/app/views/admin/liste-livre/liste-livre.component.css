@@ -1,5 +1,114 @@
+.container {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+.search-container {
+    margin-bottom: 1.5rem;
+}
 
+.search-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #E67E22;
+    box-shadow: 0 0 0 2px rgba(230, 126, 34, 0.1);
+    outline: none;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.card-wrapper {
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.card-wrapper:hover {
+    transform: translateY(-5px);
+}
+
+.livre-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    height: 200px;
+    overflow: hidden;
+}
+
+.book-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.card-wrapper:hover .book-cover {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 1rem;
+    flex: 1;
+}
+
+.titre {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #2C3E50;
+}
+
+.details {
+    margin-bottom: 1rem;
+}
+
+.details p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.card-actions {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    background: #f8f9fa;
+}
+
+/* Styles pour la pagination */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Style pour le message "Aucun résultat" */
+.no-results {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+}
+
+/* 
 .container {
     padding: 2rem;
     background-color: #f8f9fa;
@@ -49,7 +158,7 @@
 .card-header img {
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 
 .card-content {
@@ -93,7 +202,7 @@
     display: flex;
     justify-content: center;
     margin-top: 2rem;
-}
+} */
 
 /* Styles pour le modal */
 :host ::ng-deep .p-dialog .p-dialog-header {

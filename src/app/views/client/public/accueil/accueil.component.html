@@ -1,1 +1,959 @@
-<p>accueil works!</p>
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-orange-900">
+    <!-- Image de fond avec overlay -->
+    <div class="absolute inset-0">
+        <img src="assets/banners/tet24.png" alt="Bibliothèque africaine avec étagères de livres"
+            class="w-full h-full object-cover" loading="eager">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#2C3E50]/90 to-[#E67E22]/80 mix-blend-multiply"></div>
+    </div>
+
+    <!-- Contenu principal -->
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[90vh] min-h-[600px] flex items-center">
+        <div class="max-w-3xl text-white">
+            <span class="inline-block px-4 py-1.5 text-sm font-medium rounded-full mb-6 bg-white/20 backdrop-blur-sm">
+                <i class="bi bi-book-half mr-2"></i>Bienvenue sur Sénégal Livres
+            </span>
+
+            <h3 class="text-2xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
+                Découvrez la richesse de la
+                <span class="text-secondary">littérature africaine</span>
+            </h3>
+
+            <p class="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
+                Plongez dans un univers littéraire unique, des classiques intemporels aux œuvres contemporaines des plus
+                grands auteurs africains.
+            </p>
+
+            <!-- Statistiques -->
+            <div class="mt-12 pt-6 border-t border-white/10 flex flex-wrap gap-8">
+                <div class="flex items-center gap-3">
+                    <div class="p-2 bg-white/10 rounded-lg">
+                        <i class="bi bi-book text-xl text-secondary"></i>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold">500+</div>
+                        <div class="text-sm text-white/80">Livres</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="p-2 bg-white/10 rounded-lg">
+                        <i class="bi bi-people text-xl text-secondary"></i>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold">200+</div>
+                        <div class="text-sm text-white/80">Auteurs</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="p-2 bg-white/10 rounded-lg">
+                        <i class="bi bi-person-heart text-xl text-secondary"></i>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold">10K+</div>
+                        <div class="text-sm text-white/80">Lecteurs</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Défilement vers le bas -->
+    <a href="#contenu"
+        class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/80 hover:text-white transition-colors animate-bounce"
+        aria-label="Faire défiler vers le bas">
+        <i class="bi bi-chevron-down text-3xl"></i>
+    </a>
+</section>
+
+<!-- Top Livres Section -->
+<section class="top-books-section py-12 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-[#E67E22]">Top Livres</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Livre 1 -->
+            <div class="book-card bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+                        alt="Le Petit Prince" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2">Le Petit Prince</h3>
+                    <p class="text-gray-600 mb-2">Antoine de Saint-Exupéry</p>
+                    <div class="flex items-center mb-2">
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-half text-yellow-400"></i>
+                        <span class="ml-2 text-sm text-gray-600">(4.5)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-[#E67E22] font-bold">15 000 FCFA</span>
+                        <button
+                            class="bg-[#E67E22] text-white px-4 py-2 rounded-md hover:bg-[#d36c1a] transition-colors">
+                            <i class="bi bi-cart-plus me-2"></i>Ajouter
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Livre 2 -->
+            <div class="book-card bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+                        alt="1984" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2">1984</h3>
+                    <p class="text-gray-600 mb-2">George Orwell</p>
+                    <div class="flex items-center mb-2">
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star text-yellow-400"></i>
+                        <span class="ml-2 text-sm text-gray-600">(4.0)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-[#E67E22] font-bold">12 000 FCFA</span>
+                        <button
+                            class="bg-[#E67E22] text-white px-4 py-2 rounded-md hover:bg-[#d36c1a] transition-colors">
+                            <i class="bi bi-cart-plus me-2"></i>Ajouter
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Livre 3 -->
+            <div class="book-card bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                        alt="Les Misérables" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2">Les Misérables</h3>
+                    <p class="text-gray-600 mb-2">Victor Hugo</p>
+                    <div class="flex items-center mb-2">
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <span class="ml-2 text-sm text-gray-600">(5.0)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-[#E67E22] font-bold">20 000 FCFA</span>
+                        <button
+                            class="bg-[#E67E22] text-white px-4 py-2 rounded-md hover:bg-[#d36c1a] transition-colors">
+                            <i class="bi bi-cart-plus me-2"></i>Ajouter
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Livre 4 -->
+            <div class="book-card bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                        alt="Orgueil et Préjugés" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2">Orgueil et Préjugés</h3>
+                    <p class="text-gray-600 mb-2">Jane Austen</p>
+                    <div class="flex items-center mb-2">
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star text-yellow-400"></i>
+                        <span class="ml-2 text-sm text-gray-600">(4.0)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-[#E67E22] font-bold">18 000 FCFA</span>
+                        <button
+                            class="bg-[#E67E22] text-white px-4 py-2 rounded-md hover:bg-[#d36c1a] transition-colors">
+                            <i class="bi bi-cart-plus me-2"></i>Ajouter
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Livre 5 -->
+            <div class="book-card bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+                        alt="Crime et Châtiment" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2">Crime et Châtiment</h3>
+                    <p class="text-gray-600 mb-2">Fyodor Dostoevsky</p>
+                    <div class="flex items-center mb-2">
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star text-yellow-400"></i>
+                        <span class="ml-2 text-sm text-gray-600">(4.2)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-[#E67E22] font-bold">19 000 FCFA</span>
+                        <button
+                            class="bg-[#E67E22] text-white px-4 py-2 rounded-md hover:bg-[#d36c1a] transition-colors">
+                            <i class="bi bi-cart-plus me-2"></i>Ajouter
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Livre 6 -->
+            <div class="book-card bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1198&q=80"
+                        alt="Le Comte de Monte-Cristo" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2">Le Comte de Monte-Cristo</h3>
+                    <p class="text-gray-600 mb-2">Alexandre Dumas</p>
+                    <div class="flex items-center mb-2">
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <span class="ml-2 text-sm text-gray-600">(4.8)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-[#E67E22] font-bold">22 000 FCFA</span>
+                        <button
+                            class="bg-[#E67E22] text-white px-4 py-2 rounded-md hover:bg-[#d36c1a] transition-colors">
+                            <i class="bi bi-cart-plus me-2"></i>Ajouter
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Statistiques -->
+<section class="stats-section py-12 bg-[#E67E22] text-text-light">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+            <div class="stat-item">
+                <i class="bi bi-book text-4xl text-secondary mb-4"></i>
+                <h3 class="text-3xl font-bold mb-2">10,000+</h3>
+                <p>Livres Disponibles</p>
+            </div>
+            <div class="stat-item">
+                <i class="bi bi-people text-4xl text-secondary mb-4"></i>
+                <h3 class="text-3xl font-bold mb-2">5,000+</h3>
+                <p>Membres Actifs</p>
+            </div>
+            <div class="stat-item">
+                <i class="bi bi-pen text-4xl text-secondary mb-4"></i>
+                <h3 class="text-3xl font-bold mb-2">1,000+</h3>
+                <p>Auteurs Africains</p>
+            </div>
+            <div class="stat-item">
+                <i class="bi bi-globe text-4xl text-secondary mb-4"></i>
+                <h3 class="text-3xl font-bold mb-2">30+</h3>
+                <p>Pays Représentés</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Catégories Populaires -->
+<section class="categories-section py-18 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center mb-20">
+            <h2 class="text-3xl font-bold text-[#E67E22]">Explorez nos Catégories</h2>
+            <a href="#" class="text-[#E67E22] hover:text-[#d36c1a] transition-colors">Voir toutes les catégories →</a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="category-card group relative overflow-hidden rounded-lg">
+                <div class="absolute inset-0 bg-[#E67E22]/10 transition-colors group-hover:bg-[#E67E22]/20"></div>
+                <div class="relative p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="bi bi-book text-[#E67E22] text-3xl"></i>
+                        <span class="text-[#E67E22] font-bold">450</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-[#E67E22] group-hover:text-[#d36c1a] transition-colors">
+                        Romans Contemporains
+                    </h3>
+                    <p class="text-gray-600 mb-4">Découvrez les dernières œuvres de nos auteurs contemporains</p>
+                    <button class="hidden group-hover:block text-[#E67E22] hover:text-[#d36c1a] transition-colors">
+                        Explorer cette catégorie →
+                    </button>
+                </div>
+            </div>
+            <div class="category-card group relative overflow-hidden rounded-lg">
+                <div class="absolute inset-0 bg-[#E67E22]/10 transition-colors group-hover:bg-[#E67E22]/20"></div>
+                <div class="relative p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="bi bi-journal-text text-[#E67E22] text-3xl"></i>
+                        <span class="text-[#E67E22] font-bold">280</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-[#E67E22] group-hover:text-[#d36c1a] transition-colors">
+                        Poésie
+                    </h3>
+                    <p class="text-gray-600 mb-4">Les vers et rimes des plus grands poètes africains</p>
+                    <button class="hidden group-hover:block text-[#E67E22] hover:text-[#d36c1a] transition-colors">
+                        Explorer cette catégorie →
+                    </button>
+                </div>
+            </div>
+            <div class="category-card group relative overflow-hidden rounded-lg">
+                <div class="absolute inset-0 bg-[#E67E22]/10 transition-colors group-hover:bg-[#E67E22]/20"></div>
+                <div class="relative p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="bi bi-people text-[#E67E22] text-3xl"></i>
+                        <span class="text-[#E67E22] font-bold">350</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-[#E67E22] group-hover:text-[#d36c1a] transition-colors">
+                        Histoire & Culture
+                    </h3>
+                    <p class="text-gray-600 mb-4">Explorez notre riche patrimoine et histoire africaine</p>
+                    <button class="hidden group-hover:block text-[#E67E22] hover:text-[#d36c1a] transition-colors">
+                        Explorer cette catégorie →
+                    </button>
+                </div>
+            </div>
+            <div class="category-card group relative overflow-hidden rounded-lg">
+                <div class="absolute inset-0 bg-[#E67E22]/10 transition-colors group-hover:bg-[#E67E22]/20"></div>
+                <div class="relative p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="bi bi-lightbulb text-[#E67E22] text-3xl"></i>
+                        <span class="text-[#E67E22] font-bold">200</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-[#E67E22] group-hover:text-[#d36c1a] transition-colors">
+                        Essais
+                    </h3>
+                    <p class="text-gray-600 mb-4">Réflexions sur notre société et actualité africaine</p>
+                    <button class="hidden group-hover:block text-[#E67E22] hover:text-[#d36c1a] transition-colors">
+                        Explorer cette catégorie →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Nouveautés -->
+<section class="new-releases py-12 bg-[#E67E22]">
+    <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-3xl font-bold text-white">Nouveautés</h2>
+            <div class="flex gap-2">
+                <button class="p-2 rounded-full bg-white text-[#E67E22] hover:bg-[#d36c1a] transition-colors">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <button class="p-2 rounded-full bg-white text-[#E67E22] hover:bg-[#d36c1a] transition-colors">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <!-- Livre 1 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="aspect-w-2 bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+                        alt="Le Soleil des Indépendances" class="w-full h-52">
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-[#E67E22] text-sm">Nouveau</span>
+                        <span class="text-[#E67E22] px-2 py-1 rounded-full text-xs">Roman</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Le Soleil des Indép.</h3>
+                    <p class="text-gray-600 mb-2">Ahmadou Kourouma</p>
+                    <p class="text-sm text-gray-500 mb-2">Éditions Présence Africaine</p>
+                    <div class="flex items-center mb-2">
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-half text-yellow-400"></i>
+                        <span class="ml-2 text-sm text-gray-600">(4.5)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-[#E67E22] font-bold">25 000 FCFA</span>
+                        <div class="flex gap-2">
+                            <button
+                                class="bg-[#E67E22] text-white px-4 py-2 rounded hover:bg-[#d36c1a] transition-colors">
+                                <i class="bi bi-cart-plus me-2"></i>Ajouter
+                            </button>
+                            <button class="text-gray-600 hover:text-[#E67E22] transition-colors">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Livre 2 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="aspect-w-2 aspect-h-3 bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+                        alt="Une Si Longue Lettre" class="w-full h-52 object-cover">
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-[#E67E22] text-sm">Nouveau</span>
+                        <span class="text-[#E67E22] px-2 py-1 rounded-full text-xs">Roman</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Une Si Longue Lettre</h3>
+                    <p class="text-gray-600 mb-2">Mariama Bâ</p>
+                    <p class="text-sm text-gray-500 mb-2">Éditions Présence Africaine</p>
+                    <div class="flex items-center mb-2">
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <span class="ml-2 text-sm text-gray-600">(5.0)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-[#E67E22] font-bold">22 000 FCFA</span>
+                        <div class="flex gap-2">
+                            <button
+                                class="bg-[#E67E22] text-white px-4 py-2 rounded hover:bg-[#d36c1a] transition-colors">
+                                <i class="bi bi-cart-plus me-2"></i>Ajouter
+                            </button>
+                            <button class="text-gray-600 hover:text-[#E67E22] transition-colors">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Livre 3 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="aspect-w-2 aspect-h-3 bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1198&q=80"
+                        alt="Le Ventre de l'Atlantique" class="w-full h-52 object-cover">
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-[#E67E22] text-sm">Nouveau</span>
+                        <span class="text-[#E67E22] px-2 py-1 rounded-full text-xs">Roman</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Le Ventre de l'Atlantique</h3>
+                    <p class="text-gray-600 mb-2">Fatou Diome</p>
+                    <p class="text-sm text-gray-500 mb-2">Éditions Présence Africaine</p>
+                    <div class="flex items-center mb-2">
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <span class="ml-2 text-sm text-gray-600">(4.8)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-[#E67E22] font-bold">20 000 FCFA</span>
+                        <div class="flex gap-2">
+                            <button
+                                class="bg-[#E67E22] text-white px-4 py-2 rounded hover:bg-[#d36c1a] transition-colors">
+                                <i class="bi bi-cart-plus me-2"></i>Ajouter
+                            </button>
+                            <button class="text-gray-600 hover:text-[#E67E22] transition-colors">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Livre 4 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="aspect-w-2 aspect-h-3 bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                        alt="La Griffe du Lion" class="w-full h-52 object-cover">
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-[#E67E22] text-sm">Nouveau</span>
+                        <span class="text-[#E67E22] px-2 py-1 rounded-full text-xs">Roman</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">La Griffe du Lion</h3>
+                    <p class="text-gray-600 mb-2">Ahmadou Kourouma</p>
+                    <p class="text-sm text-gray-500 mb-2">Éditions Présence Africaine</p>
+                    <div class="flex items-center mb-2">
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star text-yellow-400"></i>
+                        <span class="ml-2 text-sm text-gray-600">(4.3)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-[#E67E22] font-bold">18 000 FCFA</span>
+                        <div class="flex gap-2">
+                            <button
+                                class="bg-[#E67E22] text-white px-4 py-2 rounded hover:bg-[#d36c1a] transition-colors">
+                                <i class="bi bi-cart-plus me-2"></i>Ajouter
+                            </button>
+                            <button class="text-gray-600 hover:text-[#E67E22] transition-colors">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Auteurs du Mois -->
+<section class="featured-authors py-12 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-3xl font-bold text-[#2C3E50]">Auteurs du Mois</h2>
+            <a href="#" class="text-[#E67E22] hover:text-[#d36c1a] transition-colors">Voir tous les auteurs →</a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Auteur 1 -->
+            <div class="author-card group relative overflow-hidden rounded-lg">
+                <div class="absolute inset-0 bg-[#E67E22]/10 transition-colors group-hover:bg-[#E67E22]/20"></div>
+                <div class="relative p-6">
+                    <div class="w-32 h-32 rounded-full bg-gray-200 mx-auto mb-4 overflow-hidden">
+                        <img src="https://img.freepik.com/photos-premium/portrait-femme-africaine-souriante-ecrivain-tenant-livre_23-2148687000.jpg"
+                            alt="Mariama Bâ" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-[#2C3E50] group-hover:text-[#E67E22] transition-colors">
+                        Mariama Bâ
+                    </h3>
+                    <p class="text-gray-600 mb-4">"Une si longue lettre" - Prix Noma</p>
+                    <p class="italic text-gray-600 mb-4">"L'écriture est un acte de liberté et de résistance..."</p>
+                    <div class="flex gap-4 justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <button class="text-gray-600 hover:text-[#E67E22] transition-colors">
+                            <i class="bi bi-book"></i>
+                        </button>
+                        <button class="text-gray-600 hover:text-[#E67E22] transition-colors">
+                            <i class="bi bi-share"></i>
+                        </button>
+                        <button class="text-gray-600 hover:text-[#E67E22] transition-colors">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Auteur 2 -->
+            <div class="author-card group relative overflow-hidden rounded-lg">
+                <div class="absolute inset-0 bg-[#E67E22]/10 transition-colors group-hover:bg-[#E67E22]/20"></div>
+                <div class="relative p-6">
+                    <div class="w-32 h-32 rounded-full bg-gray-200 mx-auto mb-4 overflow-hidden">
+                        <img src="https://img.freepik.com/photos-premium/portrait-homme-africain-mur-jaune_23-2148686989.jpg"
+                            alt="Ahmadou Kourouma" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-[#2C3E50] group-hover:text-[#E67E22] transition-colors">
+                        Ahmadou Kourouma
+                    </h3>
+                    <p class="text-gray-600 mb-4">"Le Soleil des Indépendances" - Prix Renaudot</p>
+                    <p class="italic text-gray-600 mb-4">"L'écriture est la mémoire de notre histoire..."</p>
+                    <div class="flex gap-4 justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <button class="text-gray-600 hover:text-[#E67E22] transition-colors">
+                            <i class="bi bi-book"></i>
+                        </button>
+                        <button class="text-gray-600 hover:text-[#E67E22] transition-colors">
+                            <i class="bi bi-share"></i>
+                        </button>
+                        <button class="text-gray-600 hover:text-[#E67E22] transition-colors">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Auteur 3 -->
+            <div class="author-card group relative overflow-hidden rounded-lg">
+                <div class="absolute inset-0 bg-[#E67E22]/10 transition-colors group-hover:bg-[#E67E22]/20"></div>
+                <div class="relative p-6">
+                    <div class="w-32 h-32 rounded-full bg-gray-200 mx-auto mb-4 overflow-hidden">
+                        <img src="https://img.freepik.com/photos-premium/jeune-femme-africaine-souriante-ecrivain-tenant-livre_23-2148687001.jpg"
+                            alt="Fatou Diome" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-[#2C3E50] group-hover:text-[#E67E22] transition-colors">
+                        Fatou Diome
+                    </h3>
+                    <p class="text-gray-600 mb-4">"Le Ventre de l'Atlantique" - Prix des Écrivains de langue française
+                    </p>
+                    <p class="italic text-gray-600 mb-4">"L'écriture est le pont entre les cultures..."</p>
+                    <div class="flex gap-4 justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <button class="text-gray-600 hover:text-[#E67E22] transition-colors">
+                            <i class="bi bi-book"></i>
+                        </button>
+                        <button class="text-gray-600 hover:text-[#E67E22] transition-colors">
+                            <i class="bi bi-share"></i>
+                        </button>
+                        <button class="text-gray-600 hover:text-[#E67E22] transition-colors">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Événements Littéraires -->
+<section class="events-section py-16 bg-[#ECF0F1]">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-[#2C3E50] mb-4">Événements Littéraires</h2>
+            <p class="text-gray-600 max-w-3xl mx-auto">Découvrez et participez à nos prochains événements dédiés à la
+                littérature africaine et à la culture du livre.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Événement 1 -->
+            <div
+                class="event-card group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <div class="relative h-48 bg-[#2C3E50] overflow-hidden">
+                    <img src="https://img.freepik.com/photos-premium/jeune-femme-africaine-souriante-ecrivain-tenant-livre_23-2148687001.jpg"
+                        alt="Fatou Diome" class="w-full h-full object-cover">
+                    <div
+                        class="absolute top-4 right-4 bg-[#E67E22] text-white text-sm font-semibold px-3 py-1 rounded-full">
+                        En Ligne
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center text-[#E67E22] mb-3">
+                        <i class="bi bi-calendar-event text-xl mr-2"></i>
+                        <span class="font-medium">15-20 Juillet 2024</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#2C3E50] mb-3 group-hover:text-[#E67E22] transition-colors">
+                        Festival du Livre Africain
+                    </h3>
+                    <p class="text-gray-600 mb-4">Une semaine de célébration de la littérature africaine avec des
+                        lectures, débats et dédicaces d'auteurs renommés.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-[#E67E22]/10 text-[#E67E22] text-xs px-3 py-1 rounded-full">Rencontres</span>
+                        <span class="bg-[#2C3E50]/10 text-[#2C3E50] text-xs px-3 py-1 rounded-full">Dédicaces</span>
+                        <span class="bg-[#E67E22]/10 text-[#E67E22] text-xs px-3 py-1 rounded-full">Ateliers</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex -space-x-2">
+                            <img src="https://img.freepik.com/photos-premium/portrait-souriant-jeune-femme-africaine_23-2148686998.jpg"
+                                alt="Participant" class="w-8 h-8 rounded-full border-2 border-white">
+                            <img src="https://img.freepik.com/photos-premium/portrait-homme-africain-souriant_23-2148687003.jpg"
+                                alt="Participant" class="w-8 h-8 rounded-full border-2 border-white">
+                            <div
+                                class="w-8 h-8 rounded-full bg-[#2C3E50] text-white text-xs flex items-center justify-center border-2 border-white">
+                                +25</div>
+                        </div>
+                        <button
+                            class="text-[#E67E22] font-medium hover:text-[#d36c1a] transition-colors flex items-center">
+                            En savoir plus <i class="bi bi-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Événement 2 -->
+            <div
+                class="event-card group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <div class="relative h-48 bg-[#2C3E50] overflow-hidden">
+                    <img src="https://img.freepik.com/photos-premium/soiree-poesie-avec-scene-eclairee-et-micro_23-2148687012.jpg"
+                        alt="Nuit de la Poésie"
+                        class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity">
+                    <div
+                        class="absolute top-4 right-4 bg-[#2C3E50] text-white text-sm font-semibold px-3 py-1 rounded-full">
+                        En Présentiel
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center text-[#E67E22] mb-3">
+                        <i class="bi bi-calendar-event text-xl mr-2"></i>
+                        <span class="font-medium">3 Août 2024</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#2C3E50] mb-3 group-hover:text-[#E67E22] transition-colors">
+                        Nuit de la Poésie Africaine
+                    </h3>
+                    <p class="text-gray-600 mb-4">Une soirée envoûtante dédiée à la poésie contemporaine africaine avec
+                        des lectures et performances live.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-[#E67E22]/10 text-[#E67E22] text-xs px-3 py-1 rounded-full">Poésie</span>
+                        <span class="bg-[#2C3E50]/10 text-[#2C3E50] text-xs px-3 py-1 rounded-full">Musique</span>
+                        <span class="bg-[#E67E22]/10 text-[#E67E22] text-xs px-3 py-1 rounded-full">Performances</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex -space-x-2">
+                            <img src="https://img.freepik.com/photos-premium/portrait-souriant-jeune-femme-africaine_23-2148686998.jpg"
+                                alt="Participant" class="w-8 h-8 rounded-full border-2 border-white">
+                            <img src="https://img.freepik.com/photos-premium/portrait-homme-africain-souriant_23-2148687003.jpg"
+                                alt="Participant" class="w-8 h-8 rounded-full border-2 border-white">
+                            <div
+                                class="w-8 h-8 rounded-full bg-[#2C3E50] text-white text-xs flex items-center justify-center border-2 border-white">
+                                +18</div>
+                        </div>
+                        <button
+                            class="text-[#E67E22] font-medium hover:text-[#d36c1a] transition-colors flex items-center">
+                            En savoir plus <i class="bi bi-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Événement 3 -->
+            <div
+                class="event-card group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <div class="relative h-48 bg-[#2C3E50] overflow-hidden">
+                    <img src="https://img.freepik.com/photos-premium/groupe-personnes-participant-atelier-ecriture_23-2148687014.jpg"
+                        alt="Atelier d'Écriture"
+                        class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity">
+                    <div
+                        class="absolute top-4 right-4 bg-[#E67E22] text-white text-sm font-semibold px-3 py-1 rounded-full">
+                        Complet
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center text-[#E67E22] mb-3">
+                        <i class="bi bi-calendar-event text-xl mr-2"></i>
+                        <span class="font-medium">10-12 Septembre 2024</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#2C3E50] mb-3 group-hover:text-[#E67E22] transition-colors">
+                        Atelier d'Écriture Créative
+                    </h3>
+                    <p class="text-gray-600 mb-4">Un atelier intensif de trois jours pour explorer différentes
+                        techniques d'écriture avec des auteurs expérimentés.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-[#2C3E50]/10 text-[#2C3E50] text-xs px-3 py-1 rounded-full">Atelier</span>
+                        <span class="bg-[#E67E22]/10 text-[#E67E22] text-xs px-3 py-1 rounded-full">Formation</span>
+                        <span class="bg-[#2C3E50]/10 text-[#2C3E50] text-xs px-3 py-1 rounded-full">Réservé</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex -space-x-2">
+                            <img src="https://img.freepik.com/photos-premium/portrait-souriant-jeune-femme-africaine_23-2148686998.jpg"
+                                alt="Participant" class="w-8 h-8 rounded-full border-2 border-white">
+                            <img src="https://img.freepik.com/photos-premium/portrait-homme-africain-souriant_23-2148687003.jpg"
+                                alt="Participant" class="w-8 h-8 rounded-full border-2 border-white">
+                            <div
+                                class="w-8 h-8 rounded-full bg-[#2C3E50] text-white text-xs flex items-center justify-center border-2 border-white">
+                                +12</div>
+                        </div>
+                        <button
+                            class="text-[#E67E22] font-medium hover:text-[#d36c1a] transition-colors flex items-center">
+                            En savoir plus <i class="bi bi-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <button
+                class="bg-[#E67E22] hover:bg-[#d36c1a] text-white font-medium py-3 px-8 rounded-lg transition-colors flex items-center mx-auto">
+                Voir tous les événements <i class="bi bi-arrow-right ml-2"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter -->
+<section
+    class="newsletter-section relative py-20 overflow-hidden bg-gradient-to-r from-[#2C3E50] to-[#1A252F] text-white">
+    <!-- Decorative elements -->
+    <div class="absolute inset-0 overflow-hidden opacity-10">
+        <div class="absolute -top-20 -left-20 w-64 h-64 bg-[#E67E22] rounded-full mix-blend-overlay"></div>
+        <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-[#E67E22] rounded-full mix-blend-overlay"></div>
+    </div>
+
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+            <!-- Icon -->
+            <div
+                class="w-16 h-16 bg-[#E67E22] rounded-2xl flex items-center justify-center mx-auto mb-6 transform transition-transform hover:rotate-12">
+                <i class="bi bi-envelope-paper-heart text-2xl text-white"></i>
+            </div>
+
+            <!-- Heading -->
+            <h2 class="text-4xl font-bold mb-4">Restez Connecté avec Notre Communauté Littéraire</h2>
+
+            <!-- Description -->
+            <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+                Abonnez-vous à notre newsletter pour recevoir en avant-première les dernières actualités littéraires,
+                les sorties de livres, les événements à venir et des offres exclusives.
+            </p>
+
+            <!-- Subscription Form -->
+            <div class="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
+                <div class="relative flex-1">
+                    <i class="bi bi-envelope absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    <input type="email" placeholder="Votre adresse email"
+                        class="w-full pl-12 pr-6 py-4 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#E67E22] focus:border-transparent"
+                        required>
+                </div>
+                <button
+                    class="bg-[#E67E22] hover:bg-[#d36c1a] text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2">
+                    <span>S'inscrire</span>
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Privacy Note -->
+            <p class="text-sm text-gray-400 mt-4">
+                En vous inscrivant, vous acceptez notre
+                <a href="#" class="text-[#E67E22] hover:underline">Politique de confidentialité</a>.
+                Désabonnement à tout moment.
+            </p>
+
+            <!-- Social Proof -->
+            <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6">
+                <div class="flex items-center">
+                    <div class="flex -space-x-2">
+                        <img src="https://img.freepik.com/photos-premium/portrait-souriant-jeune-femme-africaine_23-2148686998.jpg"
+                            alt="Participant" class="w-8 h-8 rounded-full border-2 border-white">
+                        <img src="https://img.freepik.com/photos-premium/portrait-homme-africain-souriant_23-2148687003.jpg"
+                            alt="Participant" class="w-8 h-8 rounded-full border-2 border-white">
+                        <img src="https://img.freepik.com/photos-premium/portrait-souriant-jeune-femme-africaine_23-2148686998.jpg"
+                            alt="Participant" class="w-8 h-8 rounded-full border-2 border-white">
+                        <img src="https://img.freepik.com/photos-premium/portrait-homme-africain-souriant_23-2148687003.jpg"
+                            alt="Participant" class="w-8 h-8 rounded-full border-2 border-white">
+                    </div>
+                    <span class="ml-4 text-gray-300">Rejoignez <span class="text-white font-semibold">+5,000</span>
+                        lecteurs</span>
+                </div>
+
+                <div class="hidden sm:block h-8 w-px bg-gray-600"></div>
+
+                <div class="flex items-center gap-2">
+                    <div class="flex items-center">
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                    </div>
+                    <span class="text-sm text-gray-300">4.9/5 sur 128 avis</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Témoignages -->
+<section class="testimonials py-20 bg-gradient-to-b from-white to-[#F8F9FA] relative overflow-hidden">
+    <!-- Decorative elements -->
+    <div class="absolute inset-0 overflow-hidden opacity-5">
+        <div class="absolute -right-20 -top-20 w-96 h-96 bg-[#E67E22] rounded-full mix-blend-multiply filter blur-3xl">
+        </div>
+        <div
+            class="absolute -left-20 -bottom-20 w-96 h-96 bg-[#2C3E50] rounded-full mix-blend-multiply filter blur-3xl">
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16">
+            <span
+                class="inline-block px-4 py-1 text-sm font-semibold text-[#E67E22] bg-[#E67E22]/10 rounded-full mb-4">TÉMOIGNAGES</span>
+            <h2 class="text-4xl font-bold text-[#2C3E50] mb-4">Ce que disent nos lecteurs</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Découvrez les expériences de nos lecteurs passionnés par
+                la littérature africaine</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Témoignage 1 -->
+            <div
+                class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                <div class="flex items-center mb-6">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80"
+                            alt="Fatou Diome" class="w-16 h-16 rounded-full border-4 border-[#E67E22]/20 object-cover">
+                        <div
+                            class="absolute -bottom-1 -right-1 w-6 h-6 bg-[#E67E22] rounded-full flex items-center justify-center">
+                            <i class="bi bi-quote text-white text-xs"></i>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="font-bold text-lg text-[#2C3E50]">Fatou Diome</h3>
+                        <p class="text-sm text-gray-500">Membre depuis 2022</p>
+                        <div class="flex mt-1">
+                            <i class="bi bi-star-fill text-yellow-400 text-sm"></i>
+                            <i class="bi bi-star-fill text-yellow-400 text-sm"></i>
+                            <i class="bi bi-star-fill text-yellow-400 text-sm"></i>
+                            <i class="bi bi-star-fill text-yellow-400 text-sm"></i>
+                            <i class="bi bi-star-fill text-yellow-400 text-sm"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600 italic relative pl-6 border-l-2 border-[#E67E22] mb-6">
+                    "Une bibliothèque qui met vraiment en valeur la richesse de notre littérature africaine. J'ai
+                    découvert tant d'auteurs talentueux !"
+                </p>
+                <div class="flex items-center text-sm text-gray-500">
+                    <i class="bi bi-book me-2"></i>
+                    <span>12 livres achetés</span>
+                </div>
+            </div>
+
+            <!-- Témoignage 2 -->
+            <div
+                class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                <div class="flex items-center mb-6">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                            alt="Amadou Hampâté Bâ"
+                            class="w-16 h-16 rounded-full border-4 border-[#E67E22]/20 object-cover">
+                        <div
+                            class="absolute -bottom-1 -right-1 w-6 h-6 bg-[#E67E22] rounded-full flex items-center justify-center">
+                            <i class="bi bi-quote text-white text-xs"></i>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="font-bold text-lg text-[#2C3E50]">Amadou Hampâté Bâ</h3>
+                        <p class="text-sm text-gray-500">Membre depuis 2021</p>
+                        <div class="flex mt-1">
+                            <i class="bi bi-star-fill text-yellow-400 text-sm"></i>
+                            <i class="bi bi-star-fill text-yellow-400 text-sm"></i>
+                            <i class="bi bi-star-fill text-yellow-400 text-sm"></i>
+                            <i class="bi bi-star-fill text-yellow-400 text-sm"></i>
+                            <i class="bi bi-star-half text-yellow-400 text-sm"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600 italic relative pl-6 border-l-2 border-[#E67E22] mb-6">
+                    "Enfin une plateforme qui célèbre notre héritage littéraire. La sélection d'ouvrages est
+                    impressionnante et la qualité du service est irréprochable."
+                </p>
+                <div class="flex items-center text-sm text-gray-500">
+                    <i class="bi bi-book me-2"></i>
+                    <span>27 livres achetés</span>
+                </div>
+            </div>
+
+            <!-- Témoignage 3 -->
+            <div
+                class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 md:col-span-2 lg:col-span-1">
+                <div class="flex items-center mb-6">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80"
+                            alt="Fatou Diome" class="w-16 h-16 rounded-full border-4 border-[#E67E22]/20 object-cover">
+                        <div
+                            class="absolute -bottom-1 -right-1 w-6 h-6 bg-[#E67E22] rounded-full flex items-center justify-center">
+                            <i class="bi bi-quote text-white text-xs"></i>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="font-bold text-lg text-[#2C3E50]">Mariama Bâ</h3>
+                        <p class="text-sm text-gray-500">Membre VIP</p>
+                        <div class="flex mt-1">
+                            <i class="bi bi-star-fill text-yellow-400 text-sm"></i>
+                            <i class="bi bi-star-fill text-yellow-400 text-sm"></i>
+                            <i class="bi bi-star-fill text-yellow-400 text-sm"></i>
+                            <i class="bi bi-star-fill text-yellow-400 text-sm"></i>
+                            <i class="bi bi-star-fill text-yellow-400 text-sm"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600 italic relative pl-6 border-l-2 border-[#E67E22] mb-6">
+                    "Je recommande vivement cette librairie en ligne. L'interface est intuitive, la livraison rapide, et
+                    surtout, ils ont une sélection remarquable d'auteurs africains contemporains et classiques."
+                </p>
+                <div class="flex items-center text-sm text-gray-500">
+                    <i class="bi bi-book me-2"></i>
+                    <span>42 livres achetés</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-16 text-center">
+            <button
+                class="bg-white hover:bg-gray-50 text-[#2C3E50] font-medium py-3 px-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 inline-flex items-center">
+                Voir plus de témoignages <i class="bi bi-arrow-right ml-2"></i>
+            </button>
+        </div>
+    </div>
+</section>

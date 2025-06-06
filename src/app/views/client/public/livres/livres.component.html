@@ -1,0 +1,568 @@
+<!-- En-tête de la Page -->
+<section class="relative overflow-hidden py-16 md:py-16" style="background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;">
+    <!-- Éléments décoratifs -->
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-1/4 -right-40 w-96 h-96 rounded-full" style="background-color: var(--secondary);"></div>
+        <div class="absolute bottom-1/4 -left-40 w-80 h-80 rounded-full" style="background-color: var(--accent);"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
+                Découvrez la richesse de la <span class="text-secondary">littérature africaine</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-8">
+                Plongez dans un univers de récaptions, de romans captivants et d'œuvres inspirantes qui célèbrent la diversité culturelle du continent.
+            </p>
+            
+        </div>
+    </div>
+    
+</section>
+
+<!-- Barre de recherche et filtres -->
+<section class="bg-white py-6 shadow-sm ">
+    <div class="container mx-auto px-4">
+        <!-- Barre de recherche principale -->
+        <div class="mb-6">
+            <div class="relative max-w-3xl mx-auto">
+                <input type="text" 
+                       placeholder="Rechercher un livre, un auteur, un éditeur..." 
+                       class="w-full px-6 py-4 pr-16 rounded-full border-2 border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all duration-300 text-gray-700">
+                <button class="absolute right-3 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full flex items-center justify-center text-white transition-all duration-300"
+                        style="background-color: var(--secondary);">
+                    <i class="bi bi-search text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Filtres rapides -->
+        <div class="flex flex-wrap gap-3 justify-center mb-6">
+            <button class="px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 flex items-center"
+                    style="background-color: var(--secondary); color: white;">
+                <i class="bi bi-lightning-charge-fill mr-2"></i> Nouveautés
+            </button>
+            <button class="px-5 py-2 rounded-full text-sm font-medium bg-white hover:bg-gray-100 transition-all duration-300 flex items-center border border-gray-200">
+                <i class="bi bi-trophy-fill text-amber-400 mr-2"></i> Meilleures ventes
+            </button>
+            <button class="px-5 py-2 rounded-full text-sm font-medium bg-white hover:bg-gray-100 transition-all duration-300 flex items-center border border-gray-200">
+                <i class="bi bi-award-fill text-purple-500 mr-2"></i> Prix littéraires
+            </button>
+            <button class="px-5 py-2 rounded-full text-sm font-medium bg-white hover:bg-gray-100 transition-all duration-300 flex items-center border border-gray-200">
+                <i class="bi bi-people-fill text-blue-500 mr-2"></i> Auteurs locaux
+            </button>
+            <button class="px-5 py-2 rounded-full text-sm font-medium bg-white hover:bg-gray-100 transition-all duration-300 flex items-center border border-gray-200">
+                <i class="bi bi-star-fill text-yellow-400 mr-2"></i> Coups de cœur
+            </button>
+        </div>
+
+        <!-- Filtres avancés -->
+        <div class="bg-gray-50 rounded-xl p-4 mb-6">
+            <div class="flex flex-wrap items-center gap-4">
+                <!-- Filtre par genre -->
+                <div class="flex-1 min-w-[200px]">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Genre</label>
+                    <select class="w-full p-2 rounded-lg border border-gray-300 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none">
+                        <option value="">Tous les genres</option>
+                        <option value="roman">Roman</option>
+                        <option value="poesie">Poésie</option>
+                        <option value="essai">Essai</option>
+                        <option value="biographie">Biographie</option>
+                        <option value="jeunesse">Jeunesse</option>
+                    </select>
+                </div>
+                
+                <!-- Filtre par langue -->
+                <div class="flex-1 min-w-[180px]">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Langue</label>
+                    <select class="w-full p-2 rounded-lg border border-gray-300 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none">
+                        <option value="">Toutes les langues</option>
+                        <option value="francais">Français</option>
+                        <option value="anglais">Anglais</option>
+                        <option value="wolof">Wolof</option>
+                        <option value="bilingue">Bilingue</option>
+                    </select>
+                </div>
+                
+                <!-- Filtre par prix -->
+                <div class="flex-1 min-w-[200px]">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Prix</label>
+                    <select class="w-full p-2 rounded-lg border border-gray-300 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none">
+                        <option value="">Tous les prix</option>
+                        <option value="0-10">Moins de 10€</option>
+                        <option value="10-20">10€ - 20€</option>
+                        <option value="20-50">20€ - 50€</option>
+                        <option value="50+">Plus de 50€</option>
+                    </select>
+                </div>
+                
+                <!-- Bouton de tri -->
+                <div class="flex-1 min-w-[180px]">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Trier par</label>
+                    <select class="w-full p-2 rounded-lg border border-gray-300 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none">
+                        <option value="recent">Plus récent</option>
+                        <option value="ancien">Plus ancien</option>
+                        <option value="prix-asc">Prix croissant</option>
+                        <option value="prix-desc">Prix décroissant</option>
+                        <option value="populaire">Plus populaires</option>
+                        <option value="mieux-notes">Mieux notés</option>
+                    </select>
+                </div>
+                
+                <!-- Bouton de réinitialisation -->
+                <div class="self-end">
+                    <button class="text-sm text-gray-600 hover:text-secondary flex items-center">
+                        <i class="bi bi-arrow-counterclockwise mr-1"></i> Réinitialiser
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Grille de Livres -->
+<section class="py-12 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <!-- En-tête avec nombre de résultats -->
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+            <div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-1">Notre sélection de livres</h2>
+                <p class="text-gray-600">Affichage de <span class="font-semibold text-primary">24</span> livres sur <span class="font-semibold text-primary">156</span> résultats</p>
+            </div>
+            
+            <!-- Options d'affichage -->
+            <div class="flex items-center gap-2 bg-white p-1 rounded-lg border border-gray-200">
+                <button class="p-2 rounded-lg hover:bg-gray-100 transition-colors" title="Vue grille">
+                    <i class="bi bi-grid-3x3-gap-fill text-secondary text-lg"></i>
+                </button>
+                <button class="p-2 rounded-lg hover:bg-gray-100 transition-colors text-gray-500" title="Vue liste">
+                    <i class="bi bi-list-ul text-lg"></i>
+                </button>
+                <div class="h-6 w-px bg-gray-200 mx-1"></div>
+                <span class="text-sm text-gray-500 px-2">Afficher :</span>
+                <select class="text-sm border-0 focus:ring-2 focus:ring-secondary/20 rounded-lg">
+                    <option>24</option>
+                    <option>48</option>
+                    <option>96</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Grille de livres -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- Carte Livre 1 -->
+            <div class="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group">
+                <div class="relative">
+                    <!-- Badge Nouveauté -->
+                    <div class="absolute top-3 right-3 z-10">
+                        <span class="px-3 py-1 text-xs font-semibold rounded-full" 
+                              style="background-color: var(--secondary); color: white;">
+                            Nouveauté
+                        </span>
+                    </div>
+                    
+                    <!-- Image du livre -->
+                    <div class=" bg-gray-100 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                             alt="L'Enfant noir" 
+                             class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-300"></div>
+                        
+                        <!-- Actions rapides -->
+                        <div class="absolute inset-0 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            <button class="w-8 h-8 rounded-full bg-white/90 text-primary flex items-center justify-center shadow-md hover:bg-secondary hover:text-white transition-all duration-200 text-sm"
+                                    title="Voir les détails">
+                                <i class="bi bi-eye-fill"></i>
+                            </button>
+                            <button class="w-8 h-8 rounded-full bg-white/90 text-primary flex items-center justify-center shadow-md hover:bg-secondary hover:text-white transition-all duration-200 text-sm"
+                                    title="Ajouter aux favoris">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                            <button class="w-8 h-8 rounded-full bg-white/90 text-primary flex items-center justify-center shadow-md hover:bg-secondary hover:text-white transition-all duration-200 text-sm"
+                                    title="Ajouter au panier">
+                                <i class="bi bi-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Détails du livre -->
+                <div class="p-4">
+                    <!-- Catégorie -->
+                    <div class="text-xs text-secondary font-medium mb-2">ROMAN</div>
+                    
+                    <!-- Titre -->
+                    <h3 class="font-bold text-lg text-gray-900 mb-1 line-clamp-1 hover:text-secondary transition-colors">
+                        <a href="#" class="hover:underline">Les Soleils des Indépendances</a>
+                    </h3>
+                    
+                    <!-- Auteur -->
+                    <div class="flex items-center text-sm text-gray-600 mb-3">
+                        <i class="bi bi-person-fill mr-1 text-gray-400"></i>
+                        <a href="#" class="hover:text-secondary hover:underline">Ahmadou Kourouma</a>
+                    </div>
+                    
+                    <!-- Note -->
+                    <div class="flex items-center mb-3">
+                        <div class="flex text-amber-400 text-sm">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <span class="text-xs text-gray-500 ml-2">(24 avis)</span>
+                    </div>
+                    
+                    <!-- Prix et bouton d'action -->
+                    <div class="flex justify-between items-center pt-3 border-t border-gray-100">
+                        <div>
+                            <span class="text-lg font-bold text-primary">10 500 FCFA</span>
+                            <span class="text-sm text-gray-500 line-through ml-2">12 500 FCFA</span>
+                            <span class="text-xs bg-green-100 text-green-800 font-medium ml-2 px-2 py-0.5 rounded">-14%</span>
+                        </div>
+                        <button class="w-10 h-10 rounded-full flex items-center justify-center text-white transition-colors"
+                                style="background-color: var(--secondary);">
+                            <i class="bi bi-cart-plus text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carte Livre 2 -->
+            <div class="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group">
+                <div class="relative">
+                    <!-- Badge Promotion -->
+                    <div class="absolute top-3 right-3 z-10">
+                        <span class="px-3 py-1 text-xs font-semibold rounded-full bg-red-500 text-white">
+                            -20%
+                        </span>
+                    </div>
+                    
+                    <!-- Image du livre -->
+                    <div class="bg-gray-100 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                             alt="Une si longue lettre" 
+                             class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-300"></div>
+                        
+                        <!-- Actions rapides -->
+                        <div class="absolute inset-0 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            <button class="w-8 h-8 rounded-full bg-white/90 text-primary flex items-center justify-center shadow-md hover:bg-secondary hover:text-white transition-all duration-200 text-sm"
+                                    title="Voir les détails">
+                                <i class="bi bi-eye-fill"></i>
+                            </button>
+                            <button class="w-8 h-8 rounded-full bg-white/90 text-primary flex items-center justify-center shadow-md hover:bg-secondary hover:text-white transition-all duration-200 text-sm"
+                                    title="Ajouter aux favoris">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                            <button class="w-8 h-8 rounded-full bg-white/90 text-primary flex items-center justify-center shadow-md hover:bg-secondary hover:text-white transition-all duration-200 text-sm"
+                                    title="Ajouter au panier">
+                                <i class="bi bi-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Détails du livre -->
+                <div class="p-4">
+                    <div class="text-xs text-secondary font-medium mb-2">ROMAN ÉPISTOLAIRE</div>
+                    
+                    <h3 class="font-bold text-lg text-gray-900 mb-1 line-clamp-1 hover:text-secondary transition-colors">
+                        <a href="#" class="hover:underline">Une si longue lettre</a>
+                    </h3>
+                    
+                    <div class="flex items-center text-sm text-gray-600 mb-3">
+                        <i class="bi bi-person-fill mr-1 text-gray-400"></i>
+                        <a href="#" class="hover:text-secondary hover:underline">Mariama Bâ</a>
+                    </div>
+                    
+                    <div class="flex items-center mb-3">
+                        <div class="flex text-amber-400 text-sm">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <span class="text-xs text-gray-500 ml-2">(42 avis)</span>
+                    </div>
+                    
+                    <div class="flex justify-between items-center pt-3 border-t border-gray-100">
+                        <div>
+                            <span class="text-lg font-bold text-primary">8 500 FCFA</span>
+                            <span class="text-sm text-gray-500 line-through ml-2">10 600 FCFA</span>
+                        </div>
+                        <button class="w-10 h-10 rounded-full flex items-center justify-center text-white transition-colors"
+                                style="background-color: var(--secondary);">
+                            <i class="bi bi-cart-plus text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte Livre 3 -->
+            <div class="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group">
+                <div class="relative">
+                    <!-- Badge Nouveauté -->
+                    <div class="absolute top-3 right-3 z-10">
+                        <span class="px-3 py-1 text-xs font-semibold rounded-full" 
+                              style="background-color: var(--secondary); color: white;">
+                            Nouveauté
+                        </span>
+                    </div>
+                    
+                    <!-- Image du livre -->
+                    <div class="bg-gray-100 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                             alt="Le Ventre de l'Atlantique" 
+                             class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-300"></div>
+                        
+                        <!-- Actions rapides -->
+                        <div class="absolute inset-0 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            <button class="w-8 h-8 rounded-full bg-white/90 text-primary flex items-center justify-center shadow-md hover:bg-secondary hover:text-white transition-all duration-200 text-sm"
+                                    title="Voir les détails">
+                                <i class="bi bi-eye-fill"></i>
+                            </button>
+                            <button class="w-8 h-8 rounded-full bg-white/90 text-primary flex items-center justify-center shadow-md hover:bg-secondary hover:text-white transition-all duration-200 text-sm"
+                                    title="Ajouter aux favoris">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                            <button class="w-8 h-8 rounded-full bg-white/90 text-primary flex items-center justify-center shadow-md hover:bg-secondary hover:text-white transition-all duration-200 text-sm"
+                                    title="Ajouter au panier">
+                                <i class="bi bi-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Détails du livre -->
+                <div class="p-4">
+                    <div class="text-xs text-secondary font-medium mb-2">ROMAN CONTEMPORAIN</div>
+                    
+                    <h3 class="font-bold text-lg text-gray-900 mb-1 line-clamp-1 hover:text-secondary transition-colors">
+                        <a href="#" class="hover:underline">Le Ventre de l'Atlantique</a>
+                    </h3>
+                    
+                    <div class="flex items-center text-sm text-gray-600 mb-3">
+                        <i class="bi bi-person-fill mr-1 text-gray-400"></i>
+                        <a href="#" class="hover:text-secondary hover:underline">Fatou Diome</a>
+                    </div>
+                    
+                    <div class="flex items-center mb-3">
+                        <div class="flex text-amber-400 text-sm">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <span class="text-xs text-gray-500 ml-2">(36 avis)</span>
+                    </div>
+                    
+                    <div class="flex justify-between items-center pt-3 border-t border-gray-100">
+                        <div>
+                            <span class="text-lg font-bold text-primary">9 500 FCFA</span>
+                            <span class="text-sm text-gray-500 line-through ml-2">11 700 FCFA</span>
+                            <span class="text-xs bg-green-100 text-green-800 font-medium ml-2 px-2 py-0.5 rounded">-19%</span>
+                        </div>
+                        <button class="w-10 h-10 rounded-full flex items-center justify-center text-white transition-colors"
+                                style="background-color: var(--secondary);">
+                            <i class="bi bi-cart-plus text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte Livre 4 -->
+            <div class="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group">
+                <div class="relative">
+                    <!-- Badge Meilleure vente -->
+                    <div class="absolute top-3 right-3 z-10">
+                        <span class="px-3 py-1 text-xs font-semibold rounded-full bg-yellow-500 text-white">
+                            Best-seller
+                        </span>
+                    </div>
+                    
+                    <!-- Image du livre -->
+                    <div class="bg-gray-100 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                             alt="L'Enfant noir" 
+                             class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-300"></div>
+                        
+                        <!-- Actions rapides -->
+                        <div class="absolute inset-0 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            <button class="w-8 h-8 rounded-full bg-white/90 text-primary flex items-center justify-center shadow-md hover:bg-secondary hover:text-white transition-all duration-200 text-sm"
+                                    title="Voir les détails">
+                                <i class="bi bi-eye-fill"></i>
+                            </button>
+                            <button class="w-8 h-8 rounded-full bg-white/90 text-primary flex items-center justify-center shadow-md hover:bg-secondary hover:text-white transition-all duration-200 text-sm"
+                                    title="Ajouter aux favoris">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                            <button class="w-8 h-8 rounded-full bg-white/90 text-primary flex items-center justify-center shadow-md hover:bg-secondary hover:text-white transition-all duration-200 text-sm"
+                                    title="Ajouter au panier">
+                                <i class="bi bi-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Détails du livre -->
+                <div class="p-4">
+                    <div class="text-xs text-secondary font-medium mb-2">AUTOBIOGRAPHIE</div>
+                    
+                    <h3 class="font-bold text-lg text-gray-900 mb-1 line-clamp-1 hover:text-secondary transition-colors">
+                        <a href="#" class="hover:underline">L'Enfant noir</a>
+                    </h3>
+                    
+                    <div class="flex items-center text-sm text-gray-600 mb-3">
+                        <i class="bi bi-person-fill mr-1 text-gray-400"></i>
+                        <a href="#" class="hover:text-secondary hover:underline">Camara Laye</a>
+                    </div>
+                    
+                    <div class="flex items-center mb-3">
+                        <div class="flex text-amber-400 text-sm">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <span class="text-xs text-gray-500 ml-2">(128 avis)</span>
+                    </div>
+                    
+                    <div class="flex justify-between items-center pt-3 border-t border-gray-100">
+                        <div>
+                            <span class="text-lg font-bold text-primary">6 500 FCFA</span>
+                            <span class="text-sm text-gray-500 line-through ml-2">8 200 FCFA</span>
+                            <span class="text-xs bg-green-100 text-green-800 font-medium ml-2 px-2 py-0.5 rounded">-20%</span>
+                        </div>
+                        <button class="w-10 h-10 rounded-full flex items-center justify-center text-white transition-colors"
+                                style="background-color: var(--secondary);">
+                            <i class="bi bi-cart-plus text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Pagination -->
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mt-12 pt-6 border-t border-gray-200">
+            <div class="text-sm text-gray-600">
+                Affichage de <span class="font-medium">1-24</span> sur <span class="font-medium">156</span> livres
+            </div>
+            
+            <div class="flex items-center gap-1">
+                <button class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-300 text-gray-600 hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed"
+                        disabled>
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                
+                <button class="w-10 h-10 rounded-full flex items-center justify-center bg-secondary text-white font-medium">1</button>
+                
+                <button class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-300 text-gray-700 hover:bg-gray-100">2</button>
+                <button class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-300 text-gray-700 hover:bg-gray-100">3</button>
+                
+                <span class="px-2 text-gray-500">...</span>
+                
+                <button class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-300 text-gray-700 hover:bg-gray-100">12</button>
+                
+                <button class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-300 text-gray-600 hover:bg-gray-100">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+            
+            <div class="text-sm">
+                <span class="text-gray-600">Livres par page :</span>
+                <select class="ml-2 border-0 border-b border-gray-300 focus:ring-0 focus:border-secondary">
+                    <option>24</option>
+                    <option>48</option>
+                    <option>96</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Newsletter  -->
+<section class="relative py-16 overflow-hidden" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+    <!-- Éléments décoratifs -->
+    <div class="absolute inset-0 opacity-20">
+        <div class="absolute top-1/4 -right-20 w-64 h-64 rounded-full" style="background-color: var(--secondary);"></div>
+        <div class="absolute bottom-1/4 -left-20 w-64 h-64 rounded-full" style="background-color: var(--primary);"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl p-8 md:p-12 shadow-lg">
+            <div class="text-center">
+                <!-- Badge -->
+                <span class="inline-block px-4 py-1.5 text-xs font-semibold rounded-full mb-4 text-white"
+                      style="background-color: var(--secondary); letter-spacing: 0.05em;">
+                    NEWSLETTER
+                </span>
+                
+                <!-- Titre -->
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
+                    Restez <span class="text-primary">connecté</span> avec nous
+                </h2>
+                
+                <!-- Description -->
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+                    Inscrivez-vous à notre newsletter pour ne rien rater de nos dernières sorties, offres spéciales et actualités littéraires.
+                </p>
+                
+                <!-- Formulaire -->
+                <div class="max-w-2xl mx-auto">
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <div class="relative flex-1">
+                            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <input type="email" 
+                                   placeholder="Votre adresse email" 
+                                   class="w-full pl-12 pr-5 py-4 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all duration-300 bg-white text-gray-700 placeholder-gray-400">
+                        </div>
+                        <button class="px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 whitespace-nowrap flex-shrink-0 flex items-center justify-center gap-2 hover:opacity-90"
+                                style="background-color: var(--secondary);">
+                            <span>S'inscrire</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Texte de confidentialité -->
+                    <p class="text-sm text-gray-500 mt-4 flex items-center justify-center">
+                        <i class="bi bi-lock-fill mr-1.5 text-gray-400"></i>
+                        Vos informations sont sécurisées. Désabonnement en un clic.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Réseaux sociaux -->
+            <div class="mt-10 pt-8 border-t border-gray-100">
+                <p class="text-center text-gray-600 mb-4">Suivez-nous sur les réseaux sociaux</p>
+                <div class="flex justify-center gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-100 hover:bg-primary hover:text-white flex items-center justify-center text-gray-600 transition-colors duration-300" 
+                       aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-100 hover:bg-primary hover:text-white flex items-center justify-center text-gray-600 transition-colors duration-300" 
+                       aria-label="Twitter">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-100 hover:bg-primary hover:text-white flex items-center justify-center text-gray-600 transition-colors duration-300" 
+                       aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-100 hover:bg-primary hover:text-white flex items-center justify-center text-gray-600 transition-colors duration-300" 
+                       aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
